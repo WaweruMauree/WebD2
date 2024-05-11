@@ -5,9 +5,9 @@
     text-decoration: none;
     float:inline-start;
     display: block;
-    padding: 14px 16px;
-    text-align: center;
+    padding: 10px 12px;
     font-style: italic;
+    margin-top: 0%;
 }
 .topnav a:hover{
     color:darksalmon;

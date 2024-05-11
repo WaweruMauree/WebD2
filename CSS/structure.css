@@ -1,6 +1,23 @@
 body{
     background-color: rgb(238, 234, 229);
     margin: 0;
+    background-image: url('https://t4.ftcdn.net/jpg/06/32/54/09/360_F_632540957_wEpq5Tta6xBZzk4GA4uj1OiVIH9K5Xma.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+}
+.h2{
+     background-color: burlywood;
+     margin-left:0px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     text-align: center;
     
 }
+.h2::after{
+    content: "\2665";
+}
+.h2::before{
+    content: "\2665";
+}
+
+
+
 
