@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/structure1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Home Page</title>
 </head>
 
 <body>
     <nav>
+        <input type="checkbox" id="check" >
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
         <div class="logo">WardrobeGalore</div>
         <ul class="menu">
             <li><a href="./index.html">Home</a></li>
@@ -21,9 +26,44 @@
             <li><a href="./location.html">Locate Us</a></li>
             <li><a href="./signin.html">Sign In</a></li>
         </ul>
-        
     </nav>
-    
+    <p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </p>
+
+   <div class="container">
+    <form>
+        <input type="text" name="" placeholder="Search for items or brands">
+        <button type="submit"><i class='bx bx-search-alt-2'></i></button>
+    </form>
+   </div>
+   <div class="Welcome">
+    <p style="text-transform: capitalize;font-weight: bolder;text-align: center;font-size: x-large;">Welcome to Wardrobe Galore!</p><br>
+    <p style="text-align: center;">where fashion meets style</p>
+   </div>
+   
+   <div class="slider-wrapper">
+    <div class="image-list">
+        <img src="Images/img1.jpg" alt="img-1" class="image-item">
+        <img src="Images/img2.jpg" alt="img-2" class="image-item">
+        <img src="Images/img3.jpg" alt="img-3" class="image-item">
+        <img src="Images/img4.jpg" alt="img-1" class="image-item">
+        <img src="Images/img5.jpg" alt="img-1" class="image-item">
+        <img src="Images/img6.jpg" alt="img-1" class="image-item">
+        <img src="Images/img7.jpg" alt="img-1" class="image-item">
+        <img src="Images/img8.jpg" alt="img-1" class="image-item">
+        <img src="Images/img9.jpg" alt="img-1" class="image-item">
+        <img src="Images/img10.jpg" alt="img-1" class="image-item">
+    </div>
+   </div>
+
+   <div class="redirect">
+    <a href="./profile.html">CLICK HERE TO SHOP OUR LATEST DROPS</a>
+   </div>
+
 </body>
 
 </html>
