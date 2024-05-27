@@ -6,3 +6,32 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+
+p{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 35px;
+    -webkit-columns: 250px 3;
+    -moz-columns: 250px 3;
+    columns: 250px 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 0;
+    text-align: center;
+}
+.title::before, .title::after{
+    content: "";
+    height: 2px;
+    background-color: #000;
+    display: block;
+}
+.content{
+    margin-bottom: 5px;
+}
