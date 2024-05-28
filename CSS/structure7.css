@@ -5,26 +5,42 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --main-font: 2.2rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 h2{
     text-align: center;
 }
 
-body{
+/*body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
+}*/
 
 .wrapper{
-    width: 420px;
-    margin: 0 auto;
-    background:burlywood;
+    width: 500px;
+    margin: 60px auto 60px auto;
+    background:#757575;
     color: #fff;
     border-radius: 10px;
-    padding: 10px 40px;
-
+    padding: 2px 40px 2px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .wrapper h1{
@@ -118,6 +134,40 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 
+}
+.contact{
+    padding: 80px 17%;
+    background: var(--text-color);
+}
+.main-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.contact-content li{
+    margin-bottom: 15px;
+}
+.contact-content li a{
+    display: block;
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-content li a:hover{
+    transform: translateX(-10px)
+}
+.last{
+    text-align: center;
+    padding: 17px;
+    background: #757575;
+}
+.last p{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 
