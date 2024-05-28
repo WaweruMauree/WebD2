@@ -47,7 +47,19 @@ nav{
 #check{
     display:none;
 }
-
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: burlywood;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
 @media(max-width: 952px){
     .logo{
         font-size: 30px;
