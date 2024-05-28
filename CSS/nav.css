@@ -47,6 +47,7 @@ nav{
 #check{
     display:none;
 }
+
 @media(max-width: 952px){
     .logo{
         font-size: 30px;

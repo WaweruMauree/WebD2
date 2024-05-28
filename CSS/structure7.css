@@ -22,14 +22,6 @@ body{
 h2{
     text-align: center;
 }
-
-/*body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}*/
-
 .wrapper{
     width: 500px;
     margin: 60px auto 60px auto;
