@@ -5,4 +5,99 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
 }
+:root{
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --main-font: 2.2rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h2{
+    color: #333;
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom: 10px;
+}
+iframe{
+    width: 80%;
+    height: 500px;
+    filter: invert(100%);
+    margin-bottom: 20px;
+}
+.contact{
+    padding: 80px 17%;
+    background: var(--text-color);
+}
+.main-contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.contact-content li{
+    margin-bottom: 15px;
+}
+.contact-content li a{
+    display: block;
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-content li a:hover{
+    transform: translateX(-10px)
+}
+.action form{
+    text-align: center;
+}
+.action form input[type="email"]{
+    width: 460px;
+    max-width: 100%;
+    padding: 12px 15px;
+    background: #515151;
+    color: var(--bg-color);
+    border: none;
+    outline: none;
+    margin: 0px 10px 20px 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.action form input[type="submit"]{
+    padding: 10px 35px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    margin: 0px 10px 20px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.last{
+    text-align: center;
+    padding: 17px;
+    background: #757575;
+}
+.last p{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
