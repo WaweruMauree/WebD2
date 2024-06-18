@@ -9,33 +9,8 @@
     <title>Home Page</title>
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="check" >
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="logo">WardrobeGalore</div>
-        <ul class="menu">
-            <li><a href="./index.html">Home</a></li>
-            <li>
-                <a href="./profile.html">Just For You</a>
-                <ul class="dropdown">
-                    <li><a href="#">Our Offers</a></li>
-                    <li><a href="#">Collections</a></li>
-                    <li><a href="#">Season Favorites</a></li>
-                </ul>
-            </li>
-            <li><a href="./aboutus.html">AboutUs</a></li>
-            <li><a href="./initiative.html">Initiative</a></li>
-            <li><a href="./interact.html">Our Socials</a></li>
-            <li><a href="./location.html">Locate Us</a></li>
-            <li><a href="./signin.html">Sign In</a></li>
-        </ul>
-    </nav>
-
+    
     <br><br><br><br>
-   
-
    <div class="container">
     <form>
         <input type="text" name="" placeholder="Search for items or brands">
@@ -63,14 +38,14 @@
    </div>
 
    <div class="redirect">
-    <a href="./profile.html">CLICK HERE TO SHOP OUR LATEST DROPS</a>
+    <a href="./profile.php">CLICK HERE TO SHOP OUR LATEST DROPS</a>
    </div>
 
    <!--contact start-->
    <section class="contact" id="contact">
     <div class="main-contact">
         <div class="contact-content">
-            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./aboutus.php">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#faq">Faq</a></li>
         </div>

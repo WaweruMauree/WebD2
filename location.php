@@ -1,3 +1,4 @@
+<html>
 <?php require_once ("templates/nav.php");?>
 <head>
 <meta charset="UTF-8">
@@ -70,5 +71,6 @@
     </div>
 
 </body>
+</html>
 
 
