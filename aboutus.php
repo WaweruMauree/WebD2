@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php require_once ("templates/nav.php");?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -88,4 +87,3 @@
         
 
     </body>
-</html>
