@@ -12,8 +12,8 @@
     
     <br><br><br><br>
    <div class="container">
-    <form>
-        <input type="text" name="" placeholder="Search for items or brands">
+    <form method="post" action="process_form.php">
+        <input type="text" name="search_query" placeholder="Search for items or brands">
         <button type="submit"><i class='bx bx-search-alt-2'></i></button>
     </form>
    </div>
