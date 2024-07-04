@@ -35,6 +35,12 @@
 
     <br><br><br><br>
    
+   <div class="container">
+    <form method="post" action="process_form.php">
+        <input type="text" name="search_query" placeholder="Search for items or brands">
+        <button type="submit"><i class='bx bx-search-alt-2'></i></button>
+    </form>
+   </div>
    <div class="Welcome">
     <p style="text-transform: capitalize;font-weight: bolder;text-align: center;font-size: x-large;">Welcome to Wardrobe Galore!</p><br>
     <p style="text-align: center;">where fashion meets style</p>
@@ -56,14 +62,14 @@
    </div>
 
    <div class="redirect">
-    <a href="./profile.html">CLICK HERE TO SHOP OUR LATEST DROPS</a>
+    <a href="./profile.php">CLICK HERE TO SHOP OUR LATEST DROPS</a>
    </div>
 
    <!--contact start-->
    <section class="contact" id="contact">
     <div class="main-contact">
         <div class="contact-content">
-            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./aboutus.php">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#faq">Faq</a></li>
         </div>
