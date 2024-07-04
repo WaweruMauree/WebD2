@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <input type="checkbox" id="check" >
+    <input type="checkbox" id="check" >
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
@@ -35,13 +35,6 @@
 
     <br><br><br><br>
    
-
-   <div class="container">
-    <form>
-        <input type="text" name="" placeholder="Search for items or brands">
-        <button type="submit"><i class='bx bx-search-alt-2'></i></button>
-    </form>
-   </div>
    <div class="Welcome">
     <p style="text-transform: capitalize;font-weight: bolder;text-align: center;font-size: x-large;">Welcome to Wardrobe Galore!</p><br>
     <p style="text-align: center;">where fashion meets style</p>
@@ -91,6 +84,5 @@
     <p>&copy 2024 by Wardrobe Galore</p>
    </div>
 
-  
-
 </body>
+
