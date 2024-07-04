@@ -50,6 +50,52 @@
                 </div>
             </div>
         </div>
+        <!--table start-->
+        <table>
+            <tr>
+                <th>County</th>
+                <th>Reach</th>
+                <th>Supervisor</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>Turkana</td>
+                <td>10000</td>
+                <td>Mr.Nick Macharia</td>
+                <td>nickmacharia@gmail.com</td>
+                <td>0723467895</td>
+            </tr>
+            <tr>
+                <td>Kisumu</td>
+                <td>5000</td>
+                <td>Dr. Angel Kibet</td>
+                <td>angelkibet@gmail.com</td>
+                <td>0734567234</td>
+            </tr>
+            <tr>
+                <td>Narok</td>
+                <td>13050</td>
+                <td>Rev.William Kimani</td>
+                <td>wkimani@gmail.com</td>
+                <td>0712546798</td>
+            </tr>
+            <tr>
+                <td>Kakamega</td>
+                <td>14000</td>
+                <td>Mrs.Julia Kathingu</td>
+                <td>juliakat@gmail.com</td>
+                <td>0789567356</td>
+            </tr>
+            <tr>
+                <td>Kiambu</td>
+                <td>1200</td>
+                <td>Mr.Henry Kiarie</td>
+                <td>hkiarie@gmail.com</td>
+                <td>0798563423</td>
+            </tr>
+        </table>
+        <!--end table-->
 
            <!--contact start-->
            <section class="contact" id="contact">
@@ -78,10 +124,11 @@
 
             </div>
         </section>
-        <div class="last">
+       <div class="last">
             <p>&copy 2024 by Wardrobe Galore</p>
         </div>
 
    
         
     </body>
+
