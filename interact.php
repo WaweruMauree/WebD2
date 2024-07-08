@@ -44,6 +44,43 @@
                         <textarea rows="5" placeholder="Your message"></textarea>
 
                         <button type="submit">SEND</button>
+
+                        <?php
+                         // Checks if form is submitted
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "website1";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            // Prepares to Fetch User Info and Insert into Database//
+            $stmt = $conn->prepare("INSERT INTO Contacts (name, email, message) VALUES (?, ?, ?)");
+            $stmt->bind_param("sss", $name, $email, $message);
+
+            // Set parameters and execute
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $message = $_POST['message'];
+            $stmt->execute();
+
+            // Close statement and connection
+            $stmt->close();
+            $conn->close();
+
+            // Provide feedback to the user
+            echo "<p>Thankyou! Your Message has been sent successfully!</p>";
+                
+        }
+            ?>
                     </form>
                 </div>
                 <div class="contact-right">
@@ -63,8 +100,7 @@
                 </div>
             </div>
         </div>
-        
-        
+
         <footer>
             <div class="footer-container">
                 <div class="socialIcons">
