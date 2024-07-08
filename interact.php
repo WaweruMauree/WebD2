@@ -21,7 +21,7 @@
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Name</label>
-                                <input type="email" placeholder="">
+                                <input type="text" placeholder="">
                             </div>
                             &nbsp&nbsp&nbsp<br>
                             <div class="input-group">
