@@ -11,7 +11,6 @@
 <body>
    
     <br><br><br><br>
-
     <div class="container">
         <h2>Visit our physical shop and shop from the wide range of our collections</h1>
         <p>use the map to navigate or contact us for further information</p>
