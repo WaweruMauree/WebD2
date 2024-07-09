@@ -11,7 +11,6 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 if ($conn === false) {
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-
 // Check if the id is set in the URL
 if (isset($_GET['id'])) {
     $id = intval($_GET['id']); // Converts the id to an integer for security
