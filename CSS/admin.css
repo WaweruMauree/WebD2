@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --main-font: 2.2rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+section{
+    padding: 2rem 7%;
+
+}
+/*scrollbar css*/
+.crud{
+    max-height: 600px;
+    overflow: scroll;
+}
+
+/* Container to center content */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.container h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 1px #fff;
+}
+
+
+/* Input field styling */
+input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color:#d3ad7f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color:rgb(1, 1, 17);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Table, table header, and table cell styling */
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table header background color */
+th {
+    background-color: rgb(1, 1, 17);
+    color: white;
+}
+/*table content background color*/
+td {
+    background-color: #fff;
+}
+/* Message box styling */
+.message {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
