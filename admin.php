@@ -161,7 +161,6 @@ if (isset($_POST['delete'])) {
         $message = "Error: " . $sql . "<br>" . $conn->error;
     }
 }
-
 // Close the database connection
 $conn->close();
 ?>
