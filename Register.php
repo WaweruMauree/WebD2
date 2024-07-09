@@ -29,6 +29,7 @@
         </ul>
     </nav>
 
+    <br><br><br>
     <div class="container">
     <h2>Register</h2>
     <form action="Register.php" method="post">
