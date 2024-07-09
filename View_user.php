@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+  
     <nav>
         <div class="logo">WardrobeGalore</div>
         <ul class="menu">
