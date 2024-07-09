@@ -34,7 +34,6 @@
     </nav>
 
     <br><br><br><br>
-   
    <div class="Welcome">
     <p style="text-transform: capitalize;font-weight: bolder;text-align: center;font-size: x-large;">Welcome to Wardrobe Galore!</p><br>
     <p style="text-align: center;">where fashion meets style</p>
