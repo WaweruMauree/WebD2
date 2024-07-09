@@ -11,7 +11,6 @@
     <body>
       
         <br>
-
         <div class="row">
             <div class="imgWrapper">
                 <img src="Images/initiative.jpg" alt="">
