@@ -9,7 +9,6 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users`(
 `Name` varchar(50) NOT NULL,
