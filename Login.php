@@ -28,7 +28,6 @@
             <li><a href="./signin.html">Sign In</a></li>
         </ul>
     </nav>
-
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Database connection details
