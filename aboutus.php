@@ -13,7 +13,6 @@
         <div class="content">
             <h2 class="title">Our Founder</h2>
         </div>
-
         <p> 
          
             In the heart of Nairobi, Kenya, Amina's fascination with fashion knew no bounds. She saw clothing not just as garments but as a medium for expression, a way to bridge cultures and tell stories. With this vision in mind, she embarked on a journey to create something truly unique in the bustling fashion landscape of Kenya.
