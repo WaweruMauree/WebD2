@@ -31,7 +31,6 @@ p{
     column-gap: 40px;
     margin-bottom: 20px;
 }
-
 .title{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
