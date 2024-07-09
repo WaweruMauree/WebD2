@@ -28,7 +28,6 @@
             <li><a href="./signin.html">Sign In</a></li>
         </ul>
     </nav>
-
     <br><br><br>
     <div class="container">
     <h2>Register</h2>
