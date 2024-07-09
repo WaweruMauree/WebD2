@@ -18,7 +18,7 @@
                 <ul class="dropdown">
                     <li><a href="#">Our Offers</a></li>
                     <li><a href="#">Collections</a></li>
-                    <li><a href="#">Season Favorites</a></li>
+                    <li><a href="admin.php">Admin</a></li>
                 </ul>
             </li>
             <li><a href="./aboutus.html">AboutUs</a></li>
@@ -28,6 +28,7 @@
             <li><a href="./signin.html">Sign In</a></li>
         </ul>
     </nav>
+    <br><br><br><br>
 
 <div class="container">
     <?php if (isset($message)): ?>
@@ -54,7 +55,7 @@
             <th>Name</th>
             <th>Email</th>
         </tr>
-        <?php if ($result->num_rows > 0): ?>
+        <?php if ($result->num_rows >= 0): ?>
             <?php while($row = $result->fetch_assoc()): ?>
                 <tr>
                     <td><?php echo $row["id"]; ?></td>
@@ -64,7 +65,7 @@
             <?php endwhile; ?>
         <?php else: ?>
             <tr>
-                <td colspan="3">0 results</td>
+                <td colspan="3">0 result</td>
             </tr>
         <?php endif; ?>
     </table>
@@ -86,6 +87,83 @@
         <input type="submit" name="delete" value="Delete">
     </form>
 </div>
-</section>
+
+<!--start of connection-->
+<?php
+// connection.php content
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "users";
+
+// Create connection to the database
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+// Handle Create operation
+if (isset($_POST['create'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    // Hash the password before storing it
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+
+    // Insert new user into the database
+    $sql = "INSERT INTO customers (Name, Email, Password) VALUES ('$name', '$email', '$password')";
+    if ($conn->query($sql) === TRUE) {
+        $message = "New record created successfully";
+    } else {
+        $message = "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Handle Read operation - fetch all users
+$sql = "SELECT id, name, email FROM customers";
+$result = $conn->query($sql);
+
+// Handle Update operation
+if (isset($_POST['update'])) {
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Check if password is provided and hash it
+    if (!empty($password)) {
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        // Update user information with new password
+        $sql = "UPDATE customers SET name='$name', email='$email', password='$hashedPassword' WHERE id=$id";
+    } else {
+        // Update user information without changing the password
+        $sql = "UPDATE customers SET name='$name', email='$email' WHERE id=$id";
+    }
+
+    if ($conn->query($sql) === TRUE) {
+        $message = "Record updated successfully";
+    } else {
+        $message = "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Handle Delete operation
+if (isset($_POST['delete'])) {
+    $id = $_POST['id'];
+
+    // Delete user from the database
+    $sql = "DELETE FROM customers WHERE id=$id";
+    if ($conn->query($sql) === TRUE) {
+        $message = "Record deleted successfully";
+    } else {
+        $message = "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Close the database connection
+$conn->close();
+?>
 </body>
 </html>
