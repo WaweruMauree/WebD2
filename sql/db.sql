@@ -9,14 +9,15 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE IF NOT EXISTS `users`(
-`Name` varchar(50) NOT NULL,
-`Phone_No.` tinyint(10) NOT NULL,
-`Email` varchar(50) NOT NULL,
-`Message` varchar(1000) NOT NULL,
+DROP TABLE IF EXISTS `regions`;
+CREATE TABLE IF NOT EXISTS `regions`(
+`County` varchar(50) NOT NULL,
+`Reach` bigint(1000) NOT NULL,
+`Supervisor` varchar(50) NOT NULL,
+`Email` varchar(20) NOT NULL,
+`Phone` tinyint(10) NOT NULL,
 PRIMARY KEY (`Name`),
 UNIQUE KEY (`Phone_No.`)
 );
 
-SELECT * FROM `users`;
+SELECT * FROM `regions`;
