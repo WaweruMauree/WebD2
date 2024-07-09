@@ -35,4 +35,5 @@ if (isset($_GET['id'])) {
 
 // Close connection
 $conn->close();
+
 ?>
