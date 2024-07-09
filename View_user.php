@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  
+
     <nav>
         <div class="logo">WardrobeGalore</div>
         <ul class="menu">
@@ -19,7 +19,7 @@
                 <ul class="dropdown">
                     <li><a href="#">Our Offers</a></li>
                     <li><a href="#">Collections</a></li>
-                    <li><a href="#">Season Favorites</a></li>
+                    <li><a href="admin.php">Admin</a></li>
                 </ul>
             </li>
             <li><a href="./aboutus.html">AboutUs</a></li>
