@@ -97,6 +97,7 @@ ul li:hover ul.dropdown{
     #check:checked ~ ul{
         left: 0;
     }
+    
 }
 
 
